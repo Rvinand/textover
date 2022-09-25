@@ -1,0 +1,46 @@
+@use "../../variables" as v;
+
+.heading{
+  text-align: center;
+  margin: 30px 0;
+}
+
+.input {
+  margin: 0 10px;
+  border: 1px solid #fafafa;
+  height: 200px;
+  font-family: v.$font-family;
+  display: block;
+  width: calc(100% - 33px);
+  color: v.$light;
+  background-color: v.$dark;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  box-shadow: none;
+  cursor: text;
+}
+
+.searchInput{
+  border: 1px solid #fafafa;
+}
+
+.searchWrapper {
+  min-width: 90%;
+  margin-bottom: 20px;
+}
+
+.inputWrapper {
+    min-width: 90%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count{
+  margin-top: 10px;
+}

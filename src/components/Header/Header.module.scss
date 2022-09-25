@@ -1,0 +1,64 @@
+@use "../../variables" as v;
+
+.wrapper {
+  position: relative;
+  background-color: v.$primary-color;
+  padding: 16px 0;
+}
+
+.navigation {
+  margin: 0 20px;
+  display: flex;
+}
+
+.navItem {
+  cursor: pointer;
+  display: block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: v.$light;
+}
+
+.burger{
+  display: none;
+}
+
+.links{
+  display: flex;
+}
+
+.invisible{
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .links {
+    display: flex;
+    top: 80px;
+    width: 90%;
+    z-index: 10;
+    position: absolute;
+    background-color: v.$dark;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    animation: exist 0.5s forwards;
+  }
+
+  @keyframes exist {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+
+  .navItem{
+    margin: 10px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .invisible{
+    display: none;
+  }
+}

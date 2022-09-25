@@ -1,0 +1,25 @@
+@use "../../../variables" as v;
+
+.input {
+  font-family: v.$font-family;
+  display: block;
+  width: calc(100% - 33px);
+  color: v.$light;
+  background-color: v.$dark;
+  border-radius: 6px;
+  outline: none;
+  border: 1.5px solid v.$light;
+  font-size: 1rem;
+  padding: 8px 16px;
+  height: 30px;
+  box-shadow: none;
+  cursor: text;
+
+  &:focus{
+    border: 1.5px solid v.$primary-color;
+  }
+
+  &::placeholder{
+    font-family: v.$font-family;
+  }
+}

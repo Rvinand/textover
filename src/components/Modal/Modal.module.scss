@@ -1,0 +1,21 @@
+@use "../../variables" as v;
+
+.screenWrapper{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(black, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper{
+  width: 500px;
+  background-color: v.$main-bg;
+  padding: 60px;
+  position: relative;
+}

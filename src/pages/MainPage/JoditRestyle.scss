@@ -1,0 +1,44 @@
+.jodit-symbols__table td {
+  padding: 5px !important;
+}
+
+.jodit-symbols__table td a {
+  color: inherit !important;
+}
+
+.jodit-dialog__panel{
+  width: 700px !important;
+}
+
+.jodit-symbols__container_preview {
+  margin-left: 200px !important;
+}
+
+.jodit-symbols__preview{
+  padding: 20px !important;
+  font-size: 24px !important;
+}
+
+li{
+  margin-left: 20px;
+}
+
+span[aria-label="верхний индекс"], span[aria-label="индекс"], .jodit-ui-group_group_info {
+  display: none !important;
+}
+
+.jodit-ui-group_group_other:after{
+  border-right: none !important;
+}
+
+@media (max-width: 600px) {
+  .jodit-symbols__container_preview {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .jodit-status-bar{
+    height: 40px !important;
+  }
+}

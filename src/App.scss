@@ -1,0 +1,41 @@
+@use "variables" as v;
+
+
+
+:root {
+  --bg-color: #262727;
+  --bg-header-color: #252525;
+  --main-color: #f0d3c9;
+  --text-color: #ffeee8;
+  --sub-color: #665957;
+  --sub-alt-color: #343231;
+  --border-default-opacity: #ebc6b93f;
+  --border-default: #ebc6b9a8;
+  --border-hover: #ebc6b9;
+
+  --roundness: 2.5px;
+  --button-roundness: 7px;
+  --color-selection: #92bee0;
+  --hover-transition: 100ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+::-moz-selection {
+  background: var(--color-selection);
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+body{
+  color: v.$dark;
+  font-family: v.$font-family;
+}

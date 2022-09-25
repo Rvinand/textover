@@ -1,0 +1,62 @@
+@use "../../../../variables" as v;
+
+.upload {
+  text-align: center;
+  background: v.$dark;
+  border: 1px solid v.$light;
+  padding: 30px;
+  border-radius: 15px;
+  width: 60%;
+  margin: 200px auto 0 auto;
+}
+
+.header {
+  color: v.$light;
+  margin: 0 0 30px;
+}
+
+.form {
+  position: relative;
+  border: 2px dashed v.$primary-color;
+  transition: border-color 200ms;
+  padding: 40px 0;
+  border-radius: 15px;
+}
+
+.form:hover, .dropping {
+  border-color: var(--border-hover);
+  transition: 200ms;
+}
+
+.label {
+  display: block;
+  color: v.$light;
+  letter-spacing: 1.5px;
+}
+
+.span {
+  color: v.$primary-color;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 18px;
+  }
+
+  .upload {
+    margin: 100px auto 0 auto;
+  }
+
+}

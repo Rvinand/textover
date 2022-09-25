@@ -1,0 +1,43 @@
+@use "../../variables" as v;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed v.$primary-color;
+  font-size: 24px;
+  height: 300px;
+
+  &.dragActive {
+    background-color: v.$primary-color;
+    opacity: 0.8;
+
+    .icon {
+      color: v.$light;
+    }
+
+    .checkFileText {
+      color: v.$light;
+    }
+  }
+}
+
+.icon {
+  margin-bottom: 20px;
+  color: v.$primary-color;
+}
+
+.checkFileText {
+  font-weight: 700;
+  cursor: pointer;
+  color: v.$primary-color;
+}
+
+.dragFileText {
+  text-align: center;
+}
+
+.input {
+  display: none;
+}

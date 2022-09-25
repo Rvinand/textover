@@ -1,0 +1,14 @@
+.upload {
+    text-align: center;
+    animation: OpacityTransition 1s forwards;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px 0;
+}
+
+@keyframes OpacityTransition {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}

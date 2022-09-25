@@ -1,0 +1,40 @@
+@use "../../../variables" as v;
+
+.button {
+  width: calc(100% - 22px);;
+  font-family: v.$font-family;
+  border: none;
+  cursor: pointer;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: v.$primary-color;
+  color: v.$light;
+  padding: 8px 16px;
+  font-size: 1rem;
+  min-width: 100px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(v.$primary-color, 0.9);
+  }
+
+  &:active {
+    transition-delay: 0.05s;
+    transition-duration: 0.05s;
+    background: v.$primary-color;
+  }
+
+  &:disabled {
+    &:hover {
+      background: v.$primary-color;
+    }
+    opacity: 0.5;
+    transition-delay: 0.05s;
+    transition-duration: 0.05s;
+    cursor: default;
+  }
+}
